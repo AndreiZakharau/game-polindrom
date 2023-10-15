@@ -14,14 +14,13 @@ public class Game {
     playerPhrases = new ArrayList<>();
   }
 
-  public void play(String phrase, int numberOfPlayers, String playerName) {
+  public void play(String phrase, String playerName) {
     if (!playerPhrases.contains(phrase)) {
       playerPhrases.add(phrase);
       if (isPalindrome(phrase)) {
         int points = calculatePoints(phrase);
         leaderboard.updatePoints(playerName, points);
       }
-      displayLeaderboard(numberOfPlayers);
     }
   }
 
@@ -42,7 +41,7 @@ public class Game {
     return phrase.length();
   }
 
-  private List<Player> displayLeaderboard(int numberOfPlayers) {
+  public List<Player> displayLeaderboard(int numberOfPlayers) {
 
     return leaderboard.getTopPlayers(numberOfPlayers);
   }
