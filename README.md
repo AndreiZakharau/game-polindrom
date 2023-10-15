@@ -2,7 +2,7 @@
 Palindrom: a word or phrase that reads the same in both directions.
 For example:
 clomping
-and the rose fell on Azor’s paw
+and the rose fell on 'madam' paw
 Task:
 You need to design and write a logical kernel (a set of interconnected
 components) a game that would take the input word/phrase, checking whether is
